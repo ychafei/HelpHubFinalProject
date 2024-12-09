@@ -83,7 +83,7 @@
 
 <div id="search">
 <a href="javascript:;" class="close text-decoration-none">×</a>
-<form autocomplete="off" action="https://volunteer.smartgate.pk/search" method="get">
+<form autocomplete="off" action="https://helphub.codechazer.org/search" method="get">
     <input type="text" value="" name="q" id="btnItems" placeholder="Enter Search Query..." />
     <button type="submit" class="btn btn-lg no-shadow btn-trans custom-rounded d-none btn_search"  id="btnSearch">Search</button>
 </form>
@@ -293,7 +293,7 @@ pagination('latesta54e.html?page=', 'Error occurred');
 		</script>
       <script>
         document.addEventListener('DOMContentLoaded', function () {
-          fetch('https://volunteer.smartgate.pk/api/featured-campaigns')
+          fetch('https://helphub.codechazer.org/api/featured-campaigns')
             .then(response => response.json())
             .then(data => {
               const campaigns = data.data || []; // Replace with the correct API key structure if different
@@ -312,7 +312,7 @@ pagination('latesta54e.html?page=', 'Error occurred');
                         <div class="ribbon-1" title="Featured Campaign">
                           <i class="fa fa-award"></i>
                         </div>
-                        <img class="card-img-top" src="	https://volunteer.smartgate.pk/public/campaigns/small/${campaign.small_image}" alt="image">
+                        <img class="card-img-top" src="	https://helphub.codechazer.org/public/campaigns/small/${campaign.small_image}" alt="image">
                       </a>
                       <div class="card-body">
                         <small class="btn-block mb-1">
@@ -336,7 +336,7 @@ pagination('latesta54e.html?page=', 'Error occurred');
                         <p class="card-text text-truncate">We are looking for the volunteers to join our campaign for a good cause..</p>
                         <div class="d-flex justify-content-between align-items-center">
                           <span class="text-truncate">
-                            <img src="https://volunteer.smartgate.pk/public/avatar/default.jpg" width="25" height="25" class="rounded-circle avatar-campaign">
+                            <img src="https://helphub.codechazer.org/public/avatar/default.jpg" width="25" height="25" class="rounded-circle avatar-campaign">
                             <a href=""><small>by <strong>${campaign.user.name}</strong></small></a>
                           </span>
                           <small class="text-truncate"><i class="far fa-clock text-success"></i> Exprired on ${campaign.deadline}</small>
